@@ -1,0 +1,31 @@
+name: update-cl5
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */7 * * *"   # اجرای cl5.py هر ۷ ساعت
+
+permissions:
+  contents: write
+
+jobs:
+  cl5-job:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+      - run: pip install requests psutil retrying PyYaml || echo "skip install"
+      - run: timeout 600s python cl5.py || echo "❌ cl5.py failed or skipped"
+      - run: |
+          if [[ -s normal5.json || -s final5.json ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add normal5.json final5.json
+            git commit -m "auto update from cl5.py [skip ci]" || echo "No changes"
+            git push || echo "skip push"
+          else
+            echo "⚠️ normal5.json یا final5.json خالی یا موجود نیست، commit نشد"
+          fi

@@ -1,0 +1,129 @@
+name: Sub Checker All-in-One Optimized
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */8 * * *"   # cl.py هر ۸ ساعت
+    - cron: "0 */6 * * *"   # cl2.py هر ۶ ساعت
+    - cron: "0 */10 * * *"  # cl3.py هر ۱۰ ساعت
+    - cron: "0 */12 * * *"  # cl4.py هر ۱۲ ساعت
+    - cron: "0 */15 * * *"  # cl1.py هر ۱۵ ساعت
+
+permissions:
+  contents: write
+
+jobs:
+  cl1-job:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+      - run: pip install requests psutil retrying PyYaml || echo "skip install"
+      - run: |
+          rm -f final1.json normal1.json
+          timeout 600s python cl1.py || echo "❌ cl1.py failed or skipped"
+      - run: |
+          if [[ -s final1.json || -s normal1.json ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add final1.json normal1.json
+            git commit -m "auto update from cl1.py [skip ci]" || echo "No changes"
+            git push || echo "skip push"
+          else
+            echo "⚠️ final1.json یا normal1.json خالی یا موجود نیست، commit نشد"
+          fi
+
+  cl-job:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+      - run: pip install requests psutil retrying PyYaml || echo "skip install"
+      - run: |
+          rm -f final.txt normal.txt
+          timeout 180s python cl.py || echo "❌ cl.py failed or skipped"
+      - run: |
+          if [[ -s final.txt || -s normal.txt ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add final.txt normal.txt
+            git commit -m "auto update from cl.py [skip ci]" || echo "No changes"
+            git push || echo "skip push"
+          else
+            echo "⚠️ final.txt یا normal.txt خالی یا موجود نیست، commit نشد"
+          fi
+
+  cl2-job:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+      - run: pip install requests psutil retrying PyYaml || echo "skip install"
+      - run: |
+          rm -f final2.txt normal2.txt
+          timeout 300s python cl2.py || echo "❌ cl2.py failed or skipped"
+      - run: |
+          if [[ -s final2.txt || -s normal2.txt ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add final2.txt normal2.txt
+            git commit -m "auto update from cl2.py [skip ci]" || echo "No changes"
+            git push || echo "skip push"
+          else
+            echo "⚠️ final2.txt یا normal2.txt خالی یا موجود نیست، commit نشد"
+          fi
+
+  cl3-job:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+      - run: pip install requests psutil retrying PyYaml || echo "skip install"
+      - run: |
+          rm -f final3.json normal3.json
+          timeout 600s python cl3.py || echo "❌ cl3.py failed or skipped"
+      - run: |
+          if [[ -s final3.json || -s normal3.json ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add final3.json normal3.json
+            git commit -m "auto update from cl3.py [skip ci]" || echo "No changes"
+            git push || echo "skip push"
+          else
+            echo "⚠️ final3.json یا normal3.json خالی یا موجود نیست، commit نشد"
+          fi
+
+  cl4-job:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+      - run: pip install requests psutil retrying PyYaml || echo "skip install"
+      - run: |
+          rm -f final4.json normal4.json
+          timeout 600s python cl4.py || echo "❌ cl4.py failed or skipped"
+      - run: |
+          if [[ -s final4.json || -s normal4.json ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add final4.json normal4.json
+            git commit -m "auto update from cl4.py [skip ci]" || echo "No changes"
+            git push || echo "skip push"
+          else
+            echo "⚠️ final4.json یا normal4.json خالی یا موجود نیست، commit نشد"
+          fi

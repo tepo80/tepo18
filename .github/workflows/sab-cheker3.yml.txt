@@ -1,0 +1,40 @@
+name: update-cl3
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */8 * * *"   # اجرای cl3.py هر ۸ ساعت
+
+permissions:
+  contents: write
+
+jobs:
+  cl3-job:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # مرحله 1: دریافت سورس
+      - uses: actions/checkout@v4
+
+      # مرحله 2: نصب Python
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+
+      # مرحله 3: نصب وابستگی‌ها
+      - run: pip install requests psutil retrying PyYaml || echo "skip install"
+
+      # مرحله 4: اجرای cl3.py با timeout
+      - run: timeout 600s python cl3.py || echo "❌ cl3.py failed or skipped"
+
+      # مرحله 5: commit و push فایل‌های خروجی cl3 با پسوند txt
+      - run: |
+          if [[ -s normal3.txt || -s final3.txt ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add normal3.txt final3.txt
+            git commit -m "auto update from cl3.py [skip ci]" || echo "No changes"
+            git push || echo "skip push"
+          else
+            echo "⚠️ normal3.txt یا final3.txt خالی یا موجود نیست، commit نشد"
+          fi
