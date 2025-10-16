@@ -14,22 +14,22 @@ NORMAL_TXT = "normal.txt"
 FINAL_TXT = "final.txt"
 
 LINK_PATH = [
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip10.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip20.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip30.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip40.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip50.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip60.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip70.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip80.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip90.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh10.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh20.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh30.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh40.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh50.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh60.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh70.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh80.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh90.txt",
     # منابع اضافی
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/h2.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vless.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vmess.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss.txt"
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan10.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan20.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss10.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss20.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss30.txt"
 ]
 
 # ===================== توابع =====================
