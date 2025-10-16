@@ -3,7 +3,7 @@ name: update-cl4
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */2 * * *"   # اجرای cl4.py هر ۲ ساعت (۰،۲،۴،۶،۸،۱۰،۱۲،۱۴،۱۶،۱۸،۲۰،۲۲)
+    - cron: "0 */12 * * *"   # اجرای cl4.py هر ۲ ساعت (۰،۲،۴،۶،۸،۱۰،۱۲،۱۴،۱۶،۱۸،۲۰،۲۲)
 
 permissions:
   contents: write
