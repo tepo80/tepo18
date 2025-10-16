@@ -5,8 +5,6 @@ on:
   schedule:
     - cron: "0 */8 * * *"   # cl.py هر 8 ساعت
     - cron: "0 */12 * * *"   # cl2.py هر 12 ساعت
-    
-    
     - cron: "0 */10 * * *"  # cl1.py هر 10 ساعت
 
 permissions:
