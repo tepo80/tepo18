@@ -3,10 +3,10 @@ name: Sub Checker All-in-One Optimized
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *"   # cl.py هر 6 ساعت
-    - cron: "0 */8 * * *"   # cl2.py هر 8 ساعت
-    - cron: "0 */10 * * *"  # cl3.py هر 10 ساعت
-    - cron: "0 */12 * * *"  # cl4.py هر 12 ساعت
+    - cron: "0 */1 * * *"   # cl.py هر 6 ساعت
+    - cron: "0 */2 * * *"   # cl2.py هر 8 ساعت
+    - cron: "0 */3 * * *"  # cl3.py هر 10 ساعت
+    - cron: "0 */4 * * *"  # cl4.py هر 12 ساعت
 
 permissions:
   contents: write
