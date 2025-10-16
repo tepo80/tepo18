@@ -14,22 +14,36 @@ NORMAL_TXT = "normal2.txt"
 FINAL_TXT = "final2.txt"
 
 LINK_PATH = [
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip10.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip20.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip30.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip40.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip50.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip60.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip70.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip80.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip90.txt",
-    # منابع اضافی
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/h2.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan10.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan20.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan30.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan40.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan50.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan60.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan70.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan80.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan90.txt",
     "https://raw.githubusercontent.com/tepo80/tepo18/main/vless.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vmess.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss.txt"
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/vless10.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/vless20.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/vless30.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/vless40.txt",
+        "https://raw.githubusercontent.com/tepo80/tepo18/main/vless50.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/vless60.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/vless70.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/vless80.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/vless90.txt",
+        "https://raw.githubusercontent.com/tepo80/tepo18/main/ss.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss10.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss20.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss30.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss40.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss50.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss60.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss70.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss80.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss90.txt"
 ]
 
 # ===================== توابع =====================
