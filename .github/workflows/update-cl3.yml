@@ -1,0 +1,42 @@
+name: update-cl3
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */2 * * *"   # اجرای cl3.py هر ۲ ساعت (در ساعات ۰،۲،۴،۶،۸،۱۰،۱۲،۱۴،۱۶،۱۸،۲۰،۲۲)
+
+permissions:
+  contents: write
+
+jobs:
+  cl3-job:
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 */2 * * *'
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: pip install requests psutil retrying PyYAML || echo "skip install"
+
+      - name: Run cl3.py
+        run: timeout 180s python cl3.py || echo "❌ cl3.py failed or skipped"
+
+      - name: Commit & Push results
+        run: |
+          if [[ -s final.json || -s normal.json ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add final.json normal.json
+            git commit -m "auto update from cl3.py [skip ci]" || echo "No changes"
+            git push || echo "skip push"
+          else
+            echo "⚠️ final.json یا normal.json خالی یا موجود نیست، commit نشد"
+          fi
