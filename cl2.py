@@ -14,16 +14,17 @@ NORMAL_JSON = "normal.json"
 FINAL_JSON = "final.json"
 
 LINK_PATH = [
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip10.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip20.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip30.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip40.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip50.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip60.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip70.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip80.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip90.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh100.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh10.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh20.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh30.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh40.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh50.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh60.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh70.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh80.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh90.json",
 
 ]
 
