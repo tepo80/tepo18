@@ -14,7 +14,7 @@ NORMAL_TXT = "normal2.txt"
 FINAL_TXT = "final2.txt"
 
 LINK_PATH = [
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan.txt",
     "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan10.txt",
     "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan20.txt",
     "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan30.txt",
@@ -29,12 +29,12 @@ LINK_PATH = [
     "https://raw.githubusercontent.com/tepo80/tepo18/main/vless20.txt",
     "https://raw.githubusercontent.com/tepo80/tepo18/main/vless30.txt",
     "https://raw.githubusercontent.com/tepo80/tepo18/main/vless40.txt",
-        "https://raw.githubusercontent.com/tepo80/tepo18/main/vless50.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/vless50.txt",
     "https://raw.githubusercontent.com/tepo80/tepo18/main/vless60.txt",
     "https://raw.githubusercontent.com/tepo80/tepo18/main/vless70.txt",
     "https://raw.githubusercontent.com/tepo80/tepo18/main/vless80.txt",
     "https://raw.githubusercontent.com/tepo80/tepo18/main/vless90.txt",
-        "https://raw.githubusercontent.com/tepo80/tepo18/main/ss.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss.txt",
     "https://raw.githubusercontent.com/tepo80/tepo18/main/ss10.txt",
     "https://raw.githubusercontent.com/tepo80/tepo18/main/ss20.txt",
     "https://raw.githubusercontent.com/tepo80/tepo18/main/ss30.txt",
