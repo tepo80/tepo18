@@ -29,9 +29,9 @@ LINK_PATH = [
     # منابع اضافی
     "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan10.txt",
     "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan20.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss10.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss20.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss30.txt"
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan30.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan40.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan50.txt"
 ]
 
 FILE_HEADER_TEXT = "//profile-title: base64:2YfZhduM2LTZhyDZgdi52KfZhCDwn5iO8J+YjvCfmI4gaGFtZWRwNzE="
