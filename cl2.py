@@ -16,22 +16,38 @@ TEXT_PATH = "normal2.txt"
 FIN_PATH = "final2.txt"
 
 LINK_PATH = [
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh10.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh20.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh30.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh40.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh50.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh60.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh70.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh80.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh90.txt",
-    # منابع اضافی
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan10.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan20.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss10.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss20.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss30.txt"
+    
+"https://raw.githubusercontent.com/tepo80/tepo18/main/trojan.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/trojan10.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/trojan20.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/trojan30.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/trojan40.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/trojan50.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/trojan60.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/trojan70.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/trojan80.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/trojan90.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/vless.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/vless10.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/vless20.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/vless30.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/vless40.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/vless50.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/vless60.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/vless70.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/vless80.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/vless90.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/ss.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/ss10.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/ss20.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/ss30.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/ss40.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/ss50.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/ss60.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/ss70.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/ss80.txt",
+"https://raw.githubusercontent.com/tepo80/tepo18/main/ss90.txt"
+
 ]
 
 FILE_HEADER_TEXT = "//profile-title: base64:2YfZhduM2LTZhyDZgdi52KfZhCDwn5iO8J+YjvCfmI4gaGFtZWRwNzE="
