@@ -106,7 +106,7 @@ def save_json_files(normal_list: List[Dict], final_list: List[Dict]):
 
 def update_subs():
     all_configs = []
-    for url in LINKS_RAW:
+    for url in LINKS_JSON:
         data = fetch_json(url)
         for cfg in data:
             if validate_config(cfg):
