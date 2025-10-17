@@ -10,20 +10,21 @@ import urllib.request
 from typing import List, Dict
 
 # ===================== تنظیمات =====================
-NORMAL_JSON = "normal2.json"
-FINAL_JSON = "final2.json"
+NORMAL_JSON = "normal.json"
+FINAL_JSON = "final.json"
 
 LINK_PATH = [
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip10.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip20.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip30.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip40.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip50.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip60.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip70.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip80.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip90.json"
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh100.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh10.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh20.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh30.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh40.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh50.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh60.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh70.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh80.json",
+    "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh90.json"
 ]
 
 MAX_THREADS = 20
@@ -101,7 +102,7 @@ def save_json_files(normal_list: List[Dict], final_list: List[Dict]):
 
     print(f"[ℹ️] Normal configs: {len(normal_list)} saved to {NORMAL_JSON}")
     print(f"[ℹ️] Final configs (after TCP test): {len(final_list)} saved to {FINAL_JSON}")
-    print(f"[✅] Update complete. Normal2.json and Final2.json are ready.")
+    print(f"[✅] Update complete. Normal.json and Final.json are ready.")
 
 def update_subs():
     all_configs = []
