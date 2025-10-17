@@ -13,7 +13,7 @@ from typing import List, Dict
 NORMAL_JSON = "normal2.json"
 FINAL_JSON = "final2.json"
 
-LINK_PATH = [
+LINKS_PATH = [
     "https://raw.githubusercontent.com/tepo80/tepo18/main/vip.json",
     "https://raw.githubusercontent.com/tepo80/tepo18/main/vip10.json",
     "https://raw.githubusercontent.com/tepo80/tepo18/main/vip20.json",
@@ -105,7 +105,7 @@ def save_json_files(normal_list: List[Dict], final_list: List[Dict]):
 
 def update_subs():
     all_configs = []
-    for url in LINKS_RAW:
+    for url in LINKS_PATH:
         data = fetch_json(url)
         for cfg in data:
             if validate_config(cfg):
