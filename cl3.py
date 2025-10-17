@@ -13,7 +13,7 @@ from typing import List, Dict
 NORMAL_JSON = "normal.json"
 FINAL_JSON = "final.json"
 
-LINK_PATH = [
+LINKS_PATH = [
     "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh100.json",
     "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh.json",
     "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh10.json",
