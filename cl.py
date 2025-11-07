@@ -16,6 +16,7 @@ TEXT_PATH = "normal.txt"
 FIN_PATH = "final.txt"
 
 LINK_PATH = [
+    "https://chine-panel.ahsan-tepo98.workers.dev/c808ce19-f298-4087-9bf1-27a5649fc307/sub"
     "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh.txt",
     "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh10.txt",
     "https://raw.githubusercontent.com/tepo80/tepo18/main/ssh20.txt",
