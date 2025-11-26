@@ -1,0 +1,39 @@
+name: Sub Checker CL80
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */5 * * *"   # اجرا هر ۱ ساعت
+
+permissions:
+  contents: write
+
+jobs:
+  cl80-job:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: |
+          pip install requests PyYAML || echo "skip install"
+
+      - name: Run cl80.py
+        run: |
+          python cl80.py || echo "❌ cl80.py failed or skipped"
+
+      - name: Commit and push shah.yaml if changed
+        run: |
+          if [[ -f shah.yaml ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add shah.yaml
+            git commit -m "auto update shah.yaml from cl80.py [skip ci]" || echo "No changes"
+            git push || echo "skip push"
+          else
+            echo "⚠️ shah.yaml موجود نیست، commit نشد"
